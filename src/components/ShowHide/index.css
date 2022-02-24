@@ -1,0 +1,81 @@
+/* Write your CSS here */
+.show-hide-page-bg-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.show-hide-page-container {
+  background-image: linear-gradient(to right, #fa7257, #fc63a7);
+  height: 90vh;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-heading {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 40px;
+}
+.name-block {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 200px;
+  width: 300px;
+}
+.button {
+  color: #dd1264;
+  font-family: 'Roboto';
+  font-size: 13px;
+  font-weight: bold;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 12px;
+  border-width: 0px;
+  border-style: solid;
+  width: 190px;
+}
+.names-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.name {
+  font-family: 'Roboto';
+  font-size: 25px;
+  background-color: #fddddb;
+  border-radius: 8px;
+  padding: 20px;
+  height: 110px;
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .show-hide-page-container {
+    height: 100vh;
+    width: 55%;
+    flex-wrap: wrap;
+  }
+  .names-container {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    height: 30%;
+  }
+  .name-block {
+    flex-direction: column;
+    width: 100%;
+  }
+  .main-heading {
+    font-size: 35px;
+  }
+}
